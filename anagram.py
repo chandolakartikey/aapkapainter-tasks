@@ -1,14 +1,10 @@
-def dublicate(arr):
-    arr1=sorted(arr)
-    dublicateNo=None
-    for i in range(len(arr1)-1):
-        if arr1[i]==arr1[i+1]:
-            dublicateNo=arr1[i]
-            break
-    if dublicateNo:
-        print(dublicateNo)
+def anagram(s1, s2):
+    
+    if(sorted(s1.lower())== sorted(s2.lower())):
+        print("The strings are anagrams.")
     else:
-        print("No dublicate number")
+        print("The strings aren't anagrams.")        
 
-arr=[1,2,3,4,5,8,8]
-dublicate(arr)
+str ="Mary"
+str1 ="army"
+anagram(str, str1)
